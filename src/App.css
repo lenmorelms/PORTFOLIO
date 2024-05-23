@@ -1,5 +1,7 @@
 .App {
-  text-align: center;
+  /* background-color: #282c34; */
+  background-color: #111827;
+  /* margin: 0 10%; */
 }
 
 .App-logo {
@@ -14,16 +16,95 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 0 20%;
   color: white;
 }
+@media only screen and (max-width: 1300px) {
+  .App-header {
+    margin: 0 6%;
+  }
+}
 
+@media only screen and (max-width: 900px) {
+  .App-header {
+    margin: 0 4%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .App-header {
+    margin: 0 1%;
+  }
+}
+.display-picture {
+  width: 80%;
+  height: 80%;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+.display-social-icons {
+  width: 8%;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+.display-tech-icons {
+  width: 10%;
+  border: 1px solid transparent;
+  /* border-radius: 50%; */
+}
+.heading {
+  font-size: xx-large;
+  font-weight: bolder;
+}
+.contact {
+  font-size: xx-large;
+  font-weight: bolder;
+}
+.tittle {
+  font-size: large;
+  font-weight: lighter;
+}
+@media only screen and (max-width: 900px) {
+  .display-social-icons {
+    width: 12%;
+  }
+  .heading {
+    font-size: larger;
+    font-weight: bold;
+  }
+  .display-tech-icons {
+    width: 10%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .display-picture {
+    width: 100%;
+    height: 100%;
+  }
+  .heading {
+    font-size: large;
+    font-weight: bold;
+  }
+  .display-social-icons {
+    width: 15%;
+  }
+  .display-tech-icons {
+    width: 12%;
+  }
+}
+.align-items-center {
+  display: flex;
+  align-items: center;
+}
+.bg-red {
+  background-color: red;
+}
+.bg-nav {
+  background-color: navy;
+}
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +116,60 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* ProjectCard.css */
+.project-card {
+  /* border: 1px solid #4F46E5;
+  background-color: #4F46E5; */
+  color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  /* background-color: rgba(250, 0, 0, 1); */
+}
+.fluentlinks {
+  border: 1px solid #4F46E5;
+  background-color: #4F46E5;
+}
+.afripredictor {
+  border: 1px solid #EF4444;
+  background-color: #EF4444;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.project-card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card .card-body .card-title {
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+.project-card .card-body .card-text {
+  font-size: medium;
+  font-weight: lighter;
+}
+
+.project-card .card-body .button {
+  width: 100%;
+  background-color: #fff;
+  color: #111827;
+  font-size: larger;
+  border: none;
+}
+
+.copyright {
+  text-align: center;
+  color: grey;
 }
